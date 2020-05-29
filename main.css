@@ -1,9 +1,16 @@
 
 #product-overview {
-    background:url("img/freedom.jpg");
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6), 10%, transparent), url("img/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%;
+    background-origin: border-box;
+    background-clip: padding-box;
+    /* background-image: radial-gradient(circle,red, blue);  */
     width: 100%;
-    height: 528px;
+    height: 1150px;
     padding:10px;
+    position: relative;
 }
 
 
@@ -16,8 +23,9 @@
 #product-overview h1{
     color: #fff;
     font-family: 'Anton', sans-serif;
+    font-weight: 500;
     position: relative;
-    top: 380px;
+    top: 720px;
     left: 12px;
 }
 
@@ -135,6 +143,7 @@ button:focus{
     border: 2px solid #424242;
     border-radius: 50%;
     margin:0  auto;
+    padding: 20px;
 }
 
 .key-feature__list p{

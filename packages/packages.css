@@ -3,11 +3,14 @@ main{
 }
 
 .bg-package{
-    background: url("../img/plans-background.jpg");
+    background: url("../img/plans-background.jpg") no-repeat;
+    filter: grayscale(40%);
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: -1;
+    
 }
 
 .package{
