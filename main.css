@@ -1,15 +1,15 @@
 
 #product-overview {
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6), 10%, transparent), url("img/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box ;
-    background-size: cover;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6), 10%, transparent), url("img/freedom.jpg") center/cover no-repeat border-box ;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: left 10% bottom 20%;
-    background-origin: border-box;
+    background-origin: border-box; */
     background-clip: padding-box;
     /* background-image: radial-gradient(circle,red, blue);  */
-    width: 100%;
-    height: 1150px;
-    padding:10px;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 2.75rem;
     position: relative;
 }
 
@@ -24,48 +24,36 @@
     color: #fff;
     font-family: 'Anton', sans-serif;
     font-weight: 500;
-    position: relative;
-    top: 720px;
-    left: 12px;
+    position: absolute;
+    display: inline-block;
+    bottom: 10%;
+    left: 3%;
+    font-size: 1.2rem;
 }
 
-.plans__list{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .plan{
     background-color: #d5ffdc;
     text-align: center;
-    padding: 16px ;
-    margin: 8px;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
-    border-radius: 12px;
-    box-shadow: 2px 2px 1px 1px rgba(0, 0,0, 0.3);
+    padding: 1rem ;
+    margin: 0.5rem 0;
+    width: 100%;
+    border-radius: 0.9rem;
+   
 }
-
-/* .plan h1{
-    color: #000;
-} */
 
 .plan--highlighted{
     background-color: #19b84c;
     color: #fff;
 }
 
-/* .plan--highlighted h1{
-    color: #fff;
-} */
-
 .plan__annotation{
     background-color: #fff;
     color: #19b84c;
-    padding: 8px;
+    padding: 0.5rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0,0, 0.4);
-    border-radius: 12px;
+    border-radius: 0.8rem;
 }
 
 .plan__title{
@@ -90,16 +78,17 @@
 }
 
 .plan__features li{
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
+
 
 .button{
     background-color: #0e4f1f;
     color: #fff;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;  
+    padding: 0.5rem;
+    border-radius: 0.5rem;  
     font-weight: bold;
     cursor: pointer;
 }
@@ -115,12 +104,12 @@ button:focus{
 #key-features{
     background-color: #ff1b68;
     margin-top: 80px;
-    padding: 16px;
+    padding: 1rem;
 }
 
 #key-features .section-title{
     color: #fff;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-feature__list{
@@ -131,8 +120,9 @@ button:focus{
 }
 
 .key-feature__list li{
-    display: inline-block;
-    width: 30%;
+    /* display: inline-block; */
+    /* width: 30%; */
+    margin: 2rem 0;
     vertical-align: top;
 }
 
@@ -150,5 +140,45 @@ button:focus{
     text-align: center;
     font-weight: bold;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
+
+@media(min-width: 40rem){
+
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+    
+    #product-overview h1{
+      font-size: 2rem;
+    }
+    .plan{
+        display: inline-block;
+        width: 30%;
+        margin: 0.5rem 0.2rem;
+        vertical-align: middle;
+        min-width: 13rem;
+        max-width: 24rem;
+        box-shadow: 2px 2px 1px 1px rgba(0, 0,0, 0.3);
+    }
+    .plans__list{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .key-feature__list li{
+        display: inline-block; 
+        width: 30%;
+        margin: 0;
+        max-width: 25rem;
+        vertical-align: middle;
+    }
+
+
+}
+
+/* @media(min-width:40){
+   
+} */
