@@ -1,17 +1,17 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding:0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding:0;
 }
 
 main{
-  height: 125vh;
+  height: 134vh;
 }
 
 .backdrop{
@@ -54,40 +54,33 @@ button:focus{
     top: 0;
     left: 0;
     z-index: 1;
-   }
-   
-   .main-header > div{
-       display: inline-block;
-       vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
    
    .main-header-brand {
-       color: #0e4f1f;
-       text-decoration: none;
-       font-weight: bold;
-       font-size: 20px;
-       vertical-align: middle;
-       /* width: 33px; */
-       height: 2.5rem;
-       display: inline-block
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
    }
-   .main-header-brand a{
-       vertical-align: super;
-   }
+   /* .main-header-brand a{
+      vertical-align: super;
+   } */
 
    .main-header-brand img{
-    height: 100%;
-    display: inline-block;
+    height: 2.5rem;
    }
 
    .toggle-button{
-       width: 3rem;
-       background:  transparent;
-       border: none;
-       cursor: pointer;
-       padding-top: 0;
-       bottom: 0;
-       /* vertical-align: middle; */
+      width: 3rem;
+      background:  transparent;
+      border: none;
+      cursor: pointer;
+      padding-top: 0;
+      bottom: 0;
    }
 
    .toggle-button:hover,
@@ -107,18 +100,19 @@ button:focus{
    }
    
    .main-nav{
-       display: inline-block;
-       text-align: right;
-       width: calc(100% - 144px);
-       vertical-align: middle;
+      display: flex;
    }
    
    .main-nav__items{
        margin: 0;
+       padding: 0;
+       list-style: none;
+       display: flex;
+       justify-content: flex-end;
    } 
    
    .main-nav__item {
-     display: inline-block;
+     /* display: inline-block; */
      margin: 0 16px;
    }
    
@@ -169,6 +163,9 @@ button:focus{
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-footer li{
@@ -280,7 +277,7 @@ button:focus{
     }
  
    main{
-    height: 211vh;
+    height: 244vh;
    }
   }
 
@@ -292,6 +289,18 @@ button:focus{
 
     .toggle-button{
       display: none;
+    }
+
+    .product-overview{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .main-footer ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
   }
