@@ -31,8 +31,6 @@
     font-size: 1.2rem;
 }
 
-
-
 .plan{
     background-color: #d5ffdc;
     text-align: center;
@@ -80,7 +78,6 @@
 .plan__features li{
     margin: 0.5rem 0;
 }
-
 
 .button{
     background-color: #0e4f1f;
@@ -175,10 +172,4 @@ button:focus{
         max-width: 25rem;
         vertical-align: middle;
     }
-
-
 }
-
-/* @media(min-width:40){
-   
-} */
