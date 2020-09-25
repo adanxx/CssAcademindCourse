@@ -13,7 +13,7 @@
     })
   }
 
-
+  // mobileNav.addEventListener('click', closeModel)
   backdrop.addEventListener('click', closeModel);
 
   if(modalButton){
@@ -27,7 +27,7 @@
     backdrop.classList.remove('open');
 
     if(modal){
-        modal.classList.remove('open');
+      modal.classList.remove('open');
     }
   
   }
