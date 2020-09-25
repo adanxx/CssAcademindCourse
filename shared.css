@@ -5,13 +5,15 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: auto fix-content(8rem);
   font-weight: 400;
   margin: 0;
   padding:0;
 }
 
 main{
-  height: 134vh;
+  /* height: 134vh; */
 }
 
 .backdrop{
@@ -154,7 +156,7 @@ button:focus{
   background-color: #000;
   color: #fff;
   padding: 32px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   font-size: 1.2rem;
 }
 
@@ -277,8 +279,12 @@ button:focus{
     }
  
    main{
-    height: 244vh;
+    height: 250vh;
    }
+
+   /* footer{
+     height: min-content;
+   } */
   }
 
   @media(min-width: 40.5rem){
