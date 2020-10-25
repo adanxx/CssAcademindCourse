@@ -9,15 +9,25 @@
 
 
 .testimonial__image-container{
- width: 100%; 
+ width: 100%;
  max-width: 631px;
- box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5)
-
+ box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+ transform:skew(20deg);
+ -webkit-transform:skew(20deg);
+ -moz-transform:skew(20deg);
+ -ms-transform:skew(20deg);
+ -o-transform:skew(20deg);
+ overflow: hidden;
 }
 
 .testimonial__image{
  width: 100%;
  vertical-align: top;
+ transform: skew(-20deg) scale(1.4);
+ -webkit-transform: skew(-20deg) scale(1.4);
+ -moz-transform: skew(-20deg) scale(1.4);
+ -ms-transform: skew(-20deg) scale(1.4);
+ -o-transform: skew(-20deg) scale(1.4);
 }
 
 .testimonial__info {

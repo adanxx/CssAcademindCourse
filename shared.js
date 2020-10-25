@@ -23,7 +23,8 @@
 
   function closeModel(){
 
-    mobileNav.style.display = 'none';
+    // mobileNav.style.display = 'none';
+    mobileNav.classList.remove('open_mobile');
     backdrop.classList.remove('open');
 
     if(modal){
@@ -33,6 +34,7 @@
   }
 
   toggleButton.addEventListener('click', function(){
-    mobileNav.style.display = 'block';
+    // mobileNav.style.display = 'block';
+    mobileNav.classList.add('open_mobile')
     backdrop.classList.add('open');
   })
